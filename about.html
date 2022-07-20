@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/5db608551d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-----Navbar Section----->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="course.html">COURSES</a>
+            </li>
+            <li>
+              <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>ABOUT US</h1>
+    </section>
+
+    <!-----Javascrript for  Navbar -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+    </script>
+
+    <!-----About Us Content-->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the world's largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cum
+            quasi consequatur voluptate magni aperiam quibusdam placeat ducimus
+            vel dignissimos! Aut, quae odio. Nostrum tempora nihil, animi ex
+            asperiores quae alias laudantium doloremque quisquam est vel aperiam
+            culpa quod incidunt, fugit ipsam? Error voluptatem amet cum dolorum
+            impedit cupiditate omnis rerum, molestias hic perferendis, beatae
+            sapiente sunt. Dolor, rem in.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT US-->
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quae
+        voluptatibus molestias magnam dolor, omnis deleniti est consequuntur.
+        <br />
+        Nobis quasi fugit dignissimos repellat cupiditate. Sunt aut perspiciatis
+        dolore adipisci ipsa! Quasi, saepe inventore.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>
+          Made with &nbsp; &nbsp;<i class="fa-solid fa-heart"></i>by Ali Javed
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

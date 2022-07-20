@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/5db608551d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-----Navbar Section----->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="contact.html">COURSES</a>
+            </li>
+            <li>
+              <a href="">BLOG</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate And Online Programs For 2022</h1>
+    </section>
+
+    <!-----Javascrript for  Navbar -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+    </script>
+
+    <!-----Blog Page Content----->
+
+    <section class="blog">
+      <div class="row">
+        <div class="blog-left">
+          <img src="/images/certificate.jpg" />
+          <h2>Our Certificates And Online Programs For 2022</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            commodi voluptas, cumque dolore totam incidunt aliquam deleniti
+            laboriosam eum molestias? Aliquam vel harum ipsam enim, quae labore
+            consequuntur explicabo et architecto asperiores totam quam! Harum
+            qui, quod vero provident, necessitatibus eveniet exercitationem modi
+            ab fuga quis neque perspiciatis, optio id maxime ipsum? Incidunt
+            aliquam, fuga consequatur esse maxime in vel.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            beatae, cumque totam quas expedita dolorum? Esse obcaecati dicta
+            exercitationem minus accusantium illum saepe unde praesentium
+            recusandae iste corrupti nesciunt ut expedita voluptatem corporis
+            laborum tempore rerum, eos dignissimos nobis laboriosam sapiente in!
+            Voluptates iusto commodi quasi officiis vel reprehenderit magni
+            voluptatum! Cumque sed necessitatibus recusandae molestias
+            repellendus provident hic autem aspernatur, laborum reiciendis. Ea
+            laborum adipisci doloribus blanditiis repellat placeat.
+          </p>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa aut
+            aliquid perspiciatis minima! Reprehenderit alias totam maiores
+            doloribus, cum quidem placeat, similique inventore animi possimus
+            culpa id ipsa repellendus dolorum quia pariatur ipsam quasi quae
+            quis! Molestiae in eaque numquam temporibus minima quos nihil
+            laborum minus veritatis, ducimus cum quae.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            commodi minus ipsum maiores at nesciunt nobis reprehenderit harum,
+            deleniti neque, esse illo ipsa maxime illum veniam hic quam? Ullam
+            totam, facere quidem maiores assumenda neque nisi, necessitatibus
+            delectus consequatur sit numquam! Fugit voluptatum neque quod
+            doloremque earum nulla in odio minima, corporis, vero perspiciatis
+            veniam natus! Animi amet id non.
+          </p>
+          <br />
+
+          <div class="comment-box">
+            <h3>Leave A Comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Bussiness Analyst</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Bussiness Analytics</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>15</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>34</span>
+          </div>
+          <div>
+            <span>AutoCAD</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>52</span>
+          </div>
+          <div>
+            <span>Commerce</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quae
+        voluptatibus molestias magnam dolor, omnis deleniti est consequuntur.
+        <br />
+        Nobis quasi fugit dignissimos repellat cupiditate. Sunt aut perspiciatis
+        dolore adipisci ipsa! Quasi, saepe inventore.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>
+          Made with &nbsp; &nbsp;<i class="fa-solid fa-heart"></i>by Ali Javed
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
