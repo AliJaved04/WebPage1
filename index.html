@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage 01</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/5db608551d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-----Navbar Section----->
+
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">COURSES</a>
+            </li>
+            <li>
+              <a href="">BLOG</a>
+            </li>
+            <li>
+              <a href="">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="textbox">
+        <h1>World's Biggest University</h1>
+        <p>
+          Making websites is very easy nowadays. You just need to learn HTML CSS
+          <br />Javascript and you are good to go.
+        </p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+      </div>
+    </section>
+
+    <!-----Javascrript for  Navbar -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+    </script>
+
+    <!-------Course Section----->
+
+    <section class="courses">
+      <h1>Courses we offer</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        atque beatae debitis accusamus.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            voluptatibus aperiam sequi beatae, obcaecati nulla maxime explicabo
+            cum fugiat autem
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            voluptatibus aperiam sequi beatae, obcaecati nulla maxime explicabo
+            cum fugiat autem
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduate</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            voluptatibus aperiam sequi beatae, obcaecati nulla maxime explicabo
+            cum fugiat autem
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------Campus Section----->
+
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, id.
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="images/washington.png" />
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----Facilities Section----->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
+        deserunt.
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" />
+          <h3>World's Largest Library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            dicta libero veritatis sit.
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="images/basketball.png" />
+          <h3>Largest Play Ground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            dicta libero veritatis sit.
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" />
+          <h3>Largest Cafeteria</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            dicta libero veritatis sit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----Testimonials----->
+
+    <section class="testimonials">
+      <h1>What our students say</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
+        deserunt.
+      </p>
+
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="images/user1.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis deleniti aliquam omnis distinctio ipsum possimus autem,
+              debitis quo delectus nisi itaque ea unde sed fugiat architecto
+            </p>
+            <h3>Christian Berkley</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <div class="testimonials-col">
+          <img src="images/user2.jpg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis deleniti aliquam omnis distinctio ipsum possimus autem,
+              debitis quo delectus nisi itaque ea unde sed fugiat architecto
+            </p>
+            <h3>David Byer</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------Call For Action-->
+
+    <section class="cta">
+      <h1>
+        Enroll For Our Various Online Courses From <br />Anywhere From The World
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!--ABOUT US-->
+
+    <section class="aboutus">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quae
+        voluptatibus molestias magnam dolor, omnis deleniti est consequuntur.
+        <br />
+        Nobis quasi fugit dignissimos repellat cupiditate. Sunt aut perspiciatis
+        dolore adipisci ipsa! Quasi, saepe inventore.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
+  </body>
+</html>
